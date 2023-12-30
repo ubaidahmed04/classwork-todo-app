@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sign up </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body class="bg-light d-flex align-items-center justify-content-center">
+    <div class="loginForm" id="">
+        <h1 class="text-center fw-b my-3">Sign Up PAGE</h1>
+       
+        <form id="main">
+          <div class="input">
+  
+            <label for="exampleInputEmail1" class="form-label label">User Name</label>
+            <input type="email" class="email-input" placeholder="Enter Your Name" id="username" aria-describedby="emailHelp">
+
+            <div class="input">
+  
+              <label for="exampleInputEmail1" class="form-label label">Email address</label>
+              <input type="email" class="email-input" placeholder="Enter Your Email" id="email" aria-describedby="emailHelp">
+  
+              <div class="input">
+                <label for="exampleInputPassword1" class="form-label label">Password</label>
+                <input type="password" placeholder="Enter Your Password" class="password-input" id="password">
+                
+              </div>
+              <div class="showpass">
+                <label for="checkbox" class="showPass mb-2"><input type="checkbox" id="checkbox" onclick="showPass()"> Show Password</label>
+
+              </div>
+  
+              <button type="submit" id="register" class="btn btn-primary" >Register</button>
+              <div class="d-flex align-items-center m-1">
+                <!-- <hr>OR<hr> -->
+            </div>
+              <!-- <button class="btn btn-primary" id="google_Btn"  >
+                <img src="image/google image.png" width="25px" alt="">Sign-In With Google</button> -->
+                <div class="mb-3 anchor ">
+                  <p id="signup_but">
+                    Already have an account ?Click here to <a href="./signin/login.html">Log In</a> </p>
+                </div>
+      </form>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="./firebase.js"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+<script>
+  function showPass(){
+    let password = document.getElementById("password")
+    if(password.type === "password"){
+      password.type = "text"
+    } else{
+      password.type = "password"
+    }
+  }
+</script>
+</html>     

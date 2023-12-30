@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+<body>     
+  <!-- <div class="justify-content-center row align-items-center">
+      <div class="spinner-border theme-loader" id="loader" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div> -->
+
+  </div>
+      <div class="container main-content" id="main">
+        <div class="container-fluid text-center  ">
+
+            <img src="data:image/png;base64,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" class="img-fluid text-center mt-5 pt-5" alt="" srcset="">
+        </div>
+        <div class="signout">
+          <button type="submit" id="signoutbtn" class="btn bg-success submit-btn">Sign Out</button>
+
+        </div>
+
+        <h1 class="text-center head mt-5 pb-5">Hi ! <b id="name"></b></h1>
+        <h1 class="text-center head mt-5 pb-5">Welcome To ToDo App</h1>
+<!--  -->
+<div class="main ">
+
+<main>
+    <!-- <form id="form" autocomplete="off"> -->
+        <h3 class="title">Todo List</h3>
+        <div class="control">
+            <input type="text" id="todo"  placeholder="Add Item...">
+             <button type="submit"  id="addTodo" class="btn bg-success submit-btn">Add Todo</button>
+             <button type="submit" id="deleteAllbtn" class="btn bg-danger submit-btn">Delete All</button>
+        </div>
+    <!-- </form> -->
+<div class="ul-list">
+    <ul id="list" class="list-container">
+        
+    </ul>
+
+</div>
+    <!-- <button class="btn clear-btn d-none">Clear Items</button> -->
+</main>
+</div>
+
+</body>
+<script src="./dashboard.js" type="module"></script>
+<script src="login.js"></script>
+<script type="module" src="../firebase.js"></script>
+<!-- <script type="module" src="../index.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- <script src="./firebase.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script> -->
+
+</html>

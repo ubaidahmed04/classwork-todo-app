@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+.loginForm{
+    margin: 10px;
+    padding: 20px;
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+    background-color: #ada2a2;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    box-shadow: rgba(0, 0,  0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.email-input,
+.password-input{
+    width: 100%;
+    padding: 8px 5px;
+    margin: 10px;
+    border: none;
+    border-bottom:2px solid #c0c0c0 !important ;
+
+}
+.email-input::placeholder,
+.password-input::placeholder{
+    font-size: 15px;
+    color: #c0c0c0;
+}
+.email-input:focus,
+.password-input:focus{
+    transition: all ease 0.3s;
+    outline: none;
+}
+label{
+    font-size: 20px;
+    margin-top: 5px;
+}
+button{
+    border: none;
+}
+button:hover{
+    background: linear-gradient(to right, #b82c5d, #0e7397);
+}
+hr {
+    width: 100%;
+    margin: 0 5px;
+    color: #b82c5d;
+}
+
+.showpass{
+ padding-right: 16px;
+ /* display: flex; */
+/* left: 10px; */
+/* right: 15px; */
+
+ /* align-items: ; */
+ justify-content:  left ;
+
+}
+#loginBtn{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #16BFFD;
+}
+
+#google_Btn{
+    background-color: #16BFFD;
+    border: none;
+    margin-bottom: 8px;
+}
+#signup_but{
+    font-size: 15px;
+    font-weight: 500;
+}
+#signup_but a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+}
